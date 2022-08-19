@@ -11,6 +11,7 @@ module.exports = {
       twitter: `kylemathews`,
     },
   },
+  // pathPrefix: "/anhnguyen1618.github.io",
   plugins: [
     `gatsby-plugin-image`,
     {
