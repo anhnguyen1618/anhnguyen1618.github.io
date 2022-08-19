@@ -1,96 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Aug 2022 03:37:33 GMT</lastBuildDate><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean. A small river named
-Duden flows by their place and supplies it with the necessary regelialia.&lt;/p&gt;
-&lt;h2&gt;On deer horse aboard tritely yikes and much&lt;/h2&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 19 Aug 2022 03:43:41 GMT</lastBuildDate><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Flight map visualization Technologies: Mapbox GL JS - Library to render map on browser using Web GL Turf.js - Library to calculate great…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/new-beginnings/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;h1&gt;Flight map visualization&lt;/h1&gt;
+&lt;h2&gt;Technologies:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.mapbox.com/mapbox-gl-js/api/&quot;&gt;Mapbox GL JS&lt;/a&gt; - Library to render map on browser using Web GL&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://turfjs.org/&quot;&gt;Turf.js&lt;/a&gt; - Library to calculate great-circles distance&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/springmeyer/arc.js/&quot;&gt;Arc.js&lt;/a&gt; - Library to calculate arc points using great-circles distance&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jquery.com/&quot;&gt;Jquery&lt;/a&gt; - JavaScript library to handle HTML interaction&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://jestjs.io/&quot;&gt;Jest&lt;/a&gt; - Unit test library&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://palletsprojects.com/p/flask/&quot;&gt;Flask&lt;/a&gt; - Python server framework&lt;/li&gt;
+&lt;li&gt;Heroku - Free cloud hosting&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.docker.com/&quot;&gt;Docker&lt;/a&gt; - Linux container for development&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Demo:&lt;/h2&gt;
+&lt;p&gt;Heroku demo: &lt;a href=&quot;https://flight-map-visualizer.herokuapp.com/&quot;&gt;Click here&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Functionality:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;The map is rendered using &lt;code class=&quot;language-text&quot;&gt;Mapbox GL JS&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The map displays arc lines connecting every capital to Helsinki using &lt;code class=&quot;language-text&quot;&gt;greate-circle distance&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;The map with style highlights for better data visualization. Read &lt;code class=&quot;language-text&quot;&gt;Instructions.pdf&lt;/code&gt; for more details.&lt;/li&gt;
+&lt;li&gt;The lines are colored based on distances.&lt;/li&gt;
+&lt;li&gt;The popup with route’s distance is shown when the line is &lt;strong&gt;hovered&lt;/strong&gt; on.&lt;/li&gt;
+&lt;li&gt;The feature “All flights lead to any city” is implemented by &lt;code class=&quot;language-text&quot;&gt;clicking&lt;/code&gt; into the &lt;code class=&quot;language-text&quot;&gt;air plane&lt;/code&gt; markers(representing capitals). All lines that connect to that &lt;strong&gt;clicked&lt;/strong&gt; city.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;General design:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;The capital data is stored in the file &lt;code class=&quot;language-text&quot;&gt;capitals.json&lt;/code&gt; from &lt;a href=&quot;http://techslides.com/list-of-countries-and-capitals&quot;&gt;this source&lt;/a&gt;. It is served to the front-end by a simple Flask server in &lt;code class=&quot;language-text&quot;&gt;index.py&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The front-end code is stored in &lt;code class=&quot;language-text&quot;&gt;./src&lt;/code&gt; directory. Front-end code has 5 main parts:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;This however showed weasel&lt;/li&gt;
-&lt;li&gt;Well uncritical so misled
-&lt;ul&gt;
-&lt;li&gt;this is very interesting&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fetching and transform data to correct format&lt;/strong&gt; is done in &lt;code class=&quot;language-text&quot;&gt;src/scripts/data-processor.js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Controlling mapbox GL&lt;/strong&gt; is done in &lt;code class=&quot;language-text&quot;&gt;src/scripts/map-wrapper.js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Handling stylings, theme&lt;/strong&gt; is done in &lt;code class=&quot;language-text&quot;&gt;src/scripts/stylings.js&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Handling HTML DOM element&lt;/strong&gt; is done in &lt;code class=&quot;language-text&quot;&gt;src/scripts/dom-handler&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gluing everything together&lt;/strong&gt; is in &lt;code class=&quot;language-text&quot;&gt;src/scripts/index.js&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Goodness much until that fluid owl&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When she reached the first hills of the &lt;strong&gt;Italic Mountains&lt;/strong&gt;, she had a last
-view back on the skyline of her hometown &lt;em&gt;Bookmarksgrove&lt;/em&gt;, the headline of
-&lt;a href=&quot;http://google.com&quot;&gt;Alphabet Village&lt;/a&gt; and the subline of her own road, the Line
-Lane. Pityful a rhetoric question ran over her cheek, then she continued her
-way. On her way she met a copy.&lt;/p&gt;
-&lt;h3&gt;Overlaid the jeepers uselessly much excluding&lt;/h3&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with
-&lt;a href=&quot;http://google.com&quot;&gt;Longe and Parole&lt;/a&gt; and dragged her into their agency, where
-they abused her for their projects again and again. And if she hasn’t been
-rewritten, then they are still using her.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-right at the coast of the Semantics, a large language ocean.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It is a paradisematic country, in which roasted parts of sentences fly into your
-mouth. Even the all-powerful Pointing has no control about the blind texts it is
-an almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar.&lt;/p&gt;
-&lt;h3&gt;According a funnily until pre-set or arrogant well cheerful&lt;/h3&gt;
-&lt;p&gt;The Big Oxmox advised her not to do so, because there were thousands of bad
-Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-didn’t listen. She packed her seven versalia, put her initial into the belt and
-made herself on the way.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;So baboon this&lt;/li&gt;
-&lt;li&gt;Mounted militant weasel gregariously admonishingly straightly hey&lt;/li&gt;
-&lt;li&gt;Dear foresaw hungry and much some overhung&lt;/li&gt;
-&lt;li&gt;Rash opossum less because less some amid besides yikes jeepers frenetic
-impassive fruitlessly shut&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Docker and docker-compose is used for development. Running &lt;code class=&quot;language-text&quot;&gt;webpack-dev-server&lt;/code&gt; in one container and &lt;code class=&quot;language-text&quot;&gt;flask&lt;/code&gt; server in another.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;When she reached the first hills of the Italic Mountains, she had a last view
-back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet
-Village and the subline of her own road, the Line Lane. Pityful a rhetoric
-question ran over her cheek, then she continued her way. On her way she met a
-copy.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word “and” and the Little Blind Text should turn around and
-return to its own, safe country.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;But nothing the copy said could convince her and so it didn’t take long until a
-few insidious Copy Writers ambushed her, made her drunk with Longe and Parole
-and dragged her into their agency, where they abused her for their projects
-again and again. And if she hasn’t been rewritten, then they are still using
-her. Far far away, behind the word mountains, far from the countries Vokalia and
-Consonantia, there live the blind texts.&lt;/p&gt;
-&lt;h4&gt;Silent delightfully including because before one up barring chameleon&lt;/h4&gt;
-&lt;p&gt;Separated they live in Bookmarksgrove right at the coast of the Semantics, a
-large language ocean. A small river named Duden flows by their place and
-supplies it with the necessary regelialia. It is a paradisematic country, in
-which roasted parts of sentences fly into your mouth.&lt;/p&gt;
-&lt;p&gt;Even the all-powerful Pointing has no control about the blind texts it is an
-almost unorthographic life One day however a small line of blind text by the
-name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox
-advised her not to do so, because there were thousands of bad Commas, wild
-Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.&lt;/p&gt;
-&lt;h5&gt;Wherever far wow thus a squirrel raccoon jeez jaguar this from along&lt;/h5&gt;
-&lt;p&gt;She packed her seven versalia, put her initial into the belt and made herself on
-the way. When she reached the first hills of the Italic Mountains, she had a
-last view back on the skyline of her hometown Bookmarksgrove, the headline of
-Alphabet Village and the subline of her own road, the Line Lane. Pityful a
-rhetoric question ran over her cheek, then she continued her way. On her way she
-met a copy.&lt;/p&gt;
-&lt;h6&gt;Slapped cozy a that lightheartedly and far&lt;/h6&gt;
-&lt;p&gt;The copy warned the Little Blind Text, that where it came from it would have
-been rewritten a thousand times and everything that was left from its origin
-would be the word “and” and the Little Blind Text should turn around and return
-to its own, safe country. But nothing the copy said could convince her and so it
-didn’t take long until a few insidious Copy Writers ambushed her, made her drunk
-with Longe and Parole and dragged her into their agency, where they abused her
-for their projects again and again.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
+&lt;h2&gt;Project structure:&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;mapbox/
+└─── docker-files/          &lt;span class=&quot;token comment&quot;&gt;# Docker files for front-end and back-end&lt;/span&gt;
+└─── static/                &lt;span class=&quot;token comment&quot;&gt;# Folder to store the built css, js to be served by Flask&lt;/span&gt;
+└─── templates/             &lt;span class=&quot;token comment&quot;&gt;# Html served by Flask&lt;/span&gt;
+└─── index.py               &lt;span class=&quot;token comment&quot;&gt;# Python server&lt;/span&gt;
+└─── capitals.json          &lt;span class=&quot;token comment&quot;&gt;# JSON capital data&lt;/span&gt;
+└─── .babelrc               &lt;span class=&quot;token comment&quot;&gt;# Config for JavaScript ES6 transpiler&lt;/span&gt;
+└─── .eslintrc              &lt;span class=&quot;token comment&quot;&gt;# Config for JavaScript linter&lt;/span&gt;
+└─── webpack.config.js      &lt;span class=&quot;token comment&quot;&gt;# Config for hot reload development server, package builder&lt;/span&gt;
+└─── package.json           &lt;span class=&quot;token comment&quot;&gt;# Package manager config for Javascript project&lt;/span&gt;
+└─── requirements.txt       &lt;span class=&quot;token comment&quot;&gt;# Package list for Python&lt;/span&gt;
+└─── ProcFile               &lt;span class=&quot;token comment&quot;&gt;# Heroku scripts&lt;/span&gt;
+└─── run                    &lt;span class=&quot;token comment&quot;&gt;# Script to execute unit test, lint inside Docker container&lt;/span&gt;
+└─── Instructions.pdf       &lt;span class=&quot;token comment&quot;&gt;# INTRUCTION ON HOW TO USE THE PRODUCT&lt;/span&gt;
+│
+└─── src/scripts/           &lt;span class=&quot;token comment&quot;&gt;# Main scripts&lt;/span&gt;
+    │
+    └─── index.js           &lt;span class=&quot;token comment&quot;&gt;# Entry point of the app&lt;/span&gt;
+    └─── data-processor.js  &lt;span class=&quot;token comment&quot;&gt;# Fetch data and transform data to GEOJSON format&lt;/span&gt;
+    └─── map-wrapper.js     &lt;span class=&quot;token comment&quot;&gt;# Encapsulate mapbox-gl-js instance and controll the map&lt;/span&gt;
+    │
+    └─── stylings.js        &lt;span class=&quot;token comment&quot;&gt;# Handle styling, theme changes&lt;/span&gt;
+    └─── dom-handler.js     &lt;span class=&quot;token comment&quot;&gt;# Handle HTML DOM events&lt;/span&gt;
+    └─── constants.js       &lt;span class=&quot;token comment&quot;&gt;# Constants such as API key...&lt;/span&gt;
+    └─── utils.js           &lt;span class=&quot;token comment&quot;&gt;# Helper functions&lt;/span&gt;
+    └─── __tests__/         &lt;span class=&quot;token comment&quot;&gt;# Unit tests&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Installations:&lt;/h2&gt;
+&lt;p&gt;Choose either of the listed methods below(Preferably the first method)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;USING docker and docker-compose&lt;/strong&gt;: Running development servers (with hot reload)&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Installing docker (&lt;a href=&quot;https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=94798094&quot;&gt;Linux&lt;/a&gt;, &lt;a href=&quot;https://runnable.com/docker/install-docker-on-macos&quot;&gt;MacOs&lt;/a&gt;,&lt;a href=&quot;https://www.sitepoint.com/docker-windows-10-home/&quot;&gt;Window&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Start front-end and back-end development server by the command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;docker-compose&lt;/span&gt; up&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Open browser with the address &lt;code class=&quot;language-text&quot;&gt;http://127.0.0.1:8080/&lt;/code&gt; to see the result. Make sure that port &lt;code class=&quot;language-text&quot;&gt;8080&lt;/code&gt; is available&lt;/li&gt;
+&lt;li&gt;Add execution permission for the script &lt;code class=&quot;language-text&quot;&gt;run&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;chmod&lt;/span&gt; +x run&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;To run unit test, use the command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    ./run &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;To run unit test, user the command:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    ./run lint&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;To build package for production deployment, in which the built files &lt;code class=&quot;language-text&quot;&gt;main.js&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;runtime.js&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;vendor.js&lt;/code&gt; are built into &lt;code class=&quot;language-text&quot;&gt;/static&lt;/code&gt; directory.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    ./run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Installing in your own machine&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install &lt;code class=&quot;language-text&quot;&gt;node&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;npm&lt;/code&gt;. Check &lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Install &lt;code class=&quot;language-text&quot;&gt;python&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;pip&lt;/code&gt;. Check &lt;a href=&quot;https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install front-end dependencies:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Install back-end dependencies:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    pip &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -r ./requirements.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;5&quot;&gt;
+&lt;li&gt;Run back-end development server:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    python index.py&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;6&quot;&gt;
+&lt;li&gt;Run front-end development server on another terminal tab:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run dev&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;7&quot;&gt;
+&lt;li&gt;Open browser with the address &lt;code class=&quot;language-text&quot;&gt;http://127.0.0.1:8080/&lt;/code&gt; to see the result. Make sure that port &lt;code class=&quot;language-text&quot;&gt;8080&lt;/code&gt; is available&lt;/li&gt;
+&lt;li&gt;Run unit tests:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;9&quot;&gt;
+&lt;li&gt;Run lint:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run lint&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;10&quot;&gt;
+&lt;li&gt;Build production:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;    &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[My Second Post!]]></title><description><![CDATA[Wow! I love blogging so much already. Did you know that “despite its name, salted duck eggs can also be made from
 chicken eggs, though the…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io/my-second-post/</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.io/my-second-post/</guid><pubDate>Wed, 06 May 2015 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Wow! I love blogging so much already.&lt;/p&gt;
 &lt;p&gt;Did you know that “despite its name, salted duck eggs can also be made from
 chicken eggs, though the taste and texture will be somewhat different, and the
